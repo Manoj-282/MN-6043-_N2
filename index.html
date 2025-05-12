@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MN6043 - Full LMS Navigation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: white; }
+    .header, .nav-bar { background-color: #004225; color: white; padding: 12px 24px; }
+    .header h1 { margin: 0; font-size: 20px; }
+    .nav-bar { display: flex; gap: 20px; font-weight: bold; }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: white;
+      color: black;
+      min-width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    .main {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 240px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      height: 100vh;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MN6043 - MANAGING COMPLEXITY IN PROJECTS</h1>
+</div>
+
+<div class="nav-bar">
+  <div>Module Home</div>
+  <div class="dropdown">
+    Content
+    <div class="dropdown-content">
+      <a href="#">Overview</a>
+      <a href="#">AI Digital Badges</a>
+      <a href="#">Case Studies</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    Communication
+    <div class="dropdown-content">
+      <a href="#">Announcements</a>
+      <a href="#">Calendar</a>
+      <a href="#">Discussions</a>
+      <a href="#">Microsoft Teams</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    Class Organisation
+    <div class="dropdown-content">
+      <a href="#">Attendance</a>
+      <a href="#">Awards</a>
+      <a href="#">Checklist</a>
+      <a href="#">Class Progress</a>
+      <a href="#">Classlist</a>
+      <a href="#">Grades</a>
+      <a href="#">Groups</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    Course Tools
+    <div class="dropdown-content">
+      <a href="#">Assignments</a>
+      <a href="ailuminate-page.html">Ailuminate</a>
+      <a href="#">Exams</a>
+      <a href="#">ePortfolio</a>
+      <a href="#">FAQ</a>
+      <a href="#">Glossary</a>
+      <a href="#">Links</a>
+      <a href="#">Panopto</a>
+      <a href="#">Quizzes</a>
+      <a href="#">Surveys</a>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+    <h3>Module Overview</h3>
+    <div><strong>Assessment 2</strong><br/>Sustainability Case Study</div><br/>
+    <div>Assessment 1<br/>AI Digital Badges</div>
+  </div>
+  <div class="content">
+    <h2>Assessment 2: Sustainability Case Study</h2>
+    <p><strong>AI PROMPT</strong><br/>Enter a prompt...</p>
+  </div>
+</div>
+
+</body>
+</html>
